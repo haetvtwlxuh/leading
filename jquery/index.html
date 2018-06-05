@@ -7,14 +7,18 @@
 	</script>
 	<script>
 	$(document).ready(function(){
- 		 $("button").click(function(){
-   		 $("div").animate({left:'toggle'});
-  		});
+		$('#btn1').click(function(){
+			alert($('#test').text());
+		});
+		$('#btn2').click(function(){
+			alert($('#test').html());
+		});
 	});
 	</script>
 </head>
 <body>
-	<button>开始动画</button>
-	<div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+	<p id="test">这是段落中的 <b>粗ddd体</b> 文本。</p>
+	<button id="btn1">显示文本</button>
+	<button id="btn2">显示 HTML</button>
 </body>
 </html>
