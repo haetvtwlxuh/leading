@@ -7,18 +7,14 @@
 	</script>
 	<script>
 	$(document).ready(function(){
-		$("#hide").click(function(){
-			$("p").hide();
-		});
-		$("#show").click(function(){
-			$("p").show();
-		});
+ 		 $("button").click(function(){
+   		 $("div").animate({left:'toggle'});
+  		});
 	});
 	</script>
 </head>
 <body>
-	<p>如果你点击“隐藏” 按钮，我将会消失。</p>
-	<button id="hide">隐藏</button>
-	<button id="show">显示</button>
+	<button>开始动画</button>
+	<div style="background:#98bf21;height:100px;width:100px;position:absolute;">
 </body>
 </html>

@@ -22,3 +22,9 @@ slideToggle()					上下滑动之间切换
 
 
 animate()						自定义动画
+
+stop()							停止动画
+$(selector).stop(stopAll,goToEnd);
+可选的 stopAll 参数规定是否应该清除动画队列。默认是 false，即仅停止活动的动画，允许任何排入队列的动画向后执行。
+
+可选的 goToEnd 参数规定是否立即完成当前动画。默认是 false。
