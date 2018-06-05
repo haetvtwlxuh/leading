@@ -1,0 +1,34 @@
+jquery选择器
+
+$("p")						元素选择器,选择所有p元素
+$("#test")					id选择器,选择所有id=test的元素
+$(".test")					class选择器,选择所有class=test的元素
+$('*')						选择所有元素
+$(this)						选择但钱html元素
+$("p.intro")				选取 class 为 intro 的 <p> 元素	在线实例
+$("p:first")				选取第一个 <p> 元素	在线实例
+$("ul li:first")			选取第一个 <ul> 元素的第一个 <li> 元素	在线实例
+$("ul li:first-child")		选取每个 <ul> 元素的第一个 <li> 元素	在线实例
+$("[href]")					选取带有 href 属性的元素	在线实例
+$("a[target='_blank']")		选取所有 target 属性值等于 "_blank" 的 <a> 元素	在线实例
+$("a[target!='_blank']")	选取所有 target 属性值不等于 "_blank" 的 <a> 元素	在线实例
+$(":button")				选取所有 type="button" 的 <input> 元素 和 <button> 元素	在线实例
+$("tr:even")				选取偶数位置的 <tr> 元素	在线实例
+$("tr:odd")					选取奇数位置的 <tr> 元素
+
+
+jquery事件
+
+$(document).ready() 		方法允许我们在文档完全加载完后执行函数
+click()						按钮点击事件被出发时调用的一个函数
+dblclick()					双击触发dblclick事件
+mouseenter()				鼠标穿过元素出发事件
+mouseleave()				鼠标离开元素触发事件
+mousedown()					鼠标移动元素上方,单击触发事件
+mouseup()					鼠标单机,释放鼠标触发事件
+hover()						模拟光标悬停事件
+
+当鼠标移动到元素上时，会触发指定的第一个函数(mouseenter);当鼠标移出这个元素时，会触发指定的第二个函数(mouseleave)。
+
+focus()						元素获取焦点触发事件
+blur()						失去焦点,触发事件
