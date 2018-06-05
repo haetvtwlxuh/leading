@@ -1,0 +1,41 @@
+parent()					返回被选元素直接父元素
+parents()					返回被选元素所有父元素
+parentsUntil()				返回介于俩个元素之间的所有祖先元素
+
+children()					返回被选元素所有子元素
+find()						返回所有后代元素
+
+sliblings()					返回所有同胞元素
+next()						返回被选元素的下一个同胞元素
+nextAll()					返回所有跟随在后的元素
+nextUntil()					返回介于给定元素之间的所有同胞元素
+prev						和next()相反，返回的是之前的元素
+
+first()						返回被选元素的第一个元素
+last()						返回被选元素最后一个元素
+eq()						返回被选元素制定索引号的元素
+filter()					只有符合条件的才能返回
+not()						返回所有不符合条件的元素
+
+
+AJAX
+$(selector).load(URL,data,callback);
+必需的 URL 参数规定您希望加载的 URL。
+可选的 data 参数规定与请求一同发送的查询字符串键/值对集合。
+可选的 callback 参数是 load() 方法完成后所执行的函数名称。
+
+可选的 callback 参数规定当 load() 方法完成后所要允许的回调函数。回调函数可以设置不同的参数：
+	responseTxt - 包含调用成功时的结果内容
+	statusTXT - 包含调用的状态
+	xhr - 包含 XMLHttpRequest 对象
+
+$.get(URL,callback);
+必需的 URL 参数规定您希望请求的 URL。
+可选的 callback 参数是请求成功后所执行的函数名。
+	data:数据
+	status:请求状态码
+
+$.post(URL,data,callback);
+必需的 URL 参数规定您希望请求的 URL。
+可选的 data 参数规定连同请求发送的数据。
+可选的 callback 参数是请求成功后所执行的函数名。
